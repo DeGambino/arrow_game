@@ -53,5 +53,11 @@
       "prettier/prettier": "error",
       "react/jsx-no-targer-blank": "off"
     }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "npx eslint --fix"
+    ]
   }
 }
